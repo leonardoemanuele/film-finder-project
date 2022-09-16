@@ -91,4 +91,4 @@ In this project, you’ll use your knowledge of HTTP requests and asynchronous J
 - Below our `randomMovie` declaration, call `getMovieInfo()`, passing `randomMovie` as the argument. Await its return and save it to a variable called `info`.
 - Finally, as the last line of the `showRandomMovie()` function, call `displayMovie()`, passing `info` as the argument.
 
-  ### Run your program to see movie suggestions. Like or dislike each movie to be shown another random suggestion. Change genres to get different suggestions based on your interests
+  ### Run your program to see movie suggestions. Like or dislike each movie to be shown another random suggestion. Change genres to get different suggestions based on your interests!
