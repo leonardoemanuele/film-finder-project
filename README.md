@@ -4,10 +4,10 @@
 
 In this project, you’ll use your knowledge of HTTP requests and asynchronous JavaScript to create a movie discovery app that will recommend random movies by genre.
 
-### Before you begin, you’ll need to [create an account](https://www.themoviedb.org/signup) on The Movie Database website.
+### Before you begin, you’ll need to [create an account](https://www.themoviedb.org/signup) on The Movie Database website.
 
-# Populate Drop-down Menu with Genres
-## Instructions
+# Populate Drop-down Menu with Genres
+## Instructions
 
 - Save the API key you obtained from the TMDB API to the tmdbKey variable. We’ll be making multiple calls to the TMDB API and will reference this key in the upcoming steps.
 - Check the TMDB documentation to find the API’s base URL, and save it to the tmdbBaseUrl variable.
@@ -27,8 +27,8 @@ In this project, you’ll use your knowledge of HTTP requests and asynchronous J
   Save the `genres` property of `jsonResponse` in a variable called `genres`. Log this variable to the console to confirm that it contains the correct information.
 - Return genres as the very last line of the if statement inside our try block of the `getGenres()` function.
 
-# Get a Random Movie
-## Instructions
+# Get a Random Movie
+## Instructions
 
 - For the next several steps we’ll be working inside `getMovies()` to fetch a list of movies based on the genre selected from the list of genres we returned in `getGenres()`.
 
@@ -60,8 +60,8 @@ In this project, you’ll use your knowledge of HTTP requests and asynchronous J
 
   After you check what movies logs to the console, remove the `getMovies()` function call. Otherwise, it will automatically execute every time you run your program, causing unexpected behavior later.
 
-# Get Movie Info
-## Instructions
+# Get Movie Info
+## Instructions
 
 - For the next several steps, we’ll be working inside the `getMovieInfo()` function to fetch the details of a random movie from the list of movies we returned in `getMovies()`.
 
@@ -83,12 +83,12 @@ In this project, you’ll use your knowledge of HTTP requests and asynchronous J
 
   We can return our entire response object since it contains all the details for a single movie.
 
-# Display Movie
-## Instructions
+# Display Movie
+## Instructions
 
 - Turn `showRandomMovie()` into an asynchronous function. Then, on the last line of the function, call `getMovies()`, await its return, and save it to a variable called `movies`. Since `getMovies()` returns a promise, we need to `await` its resolution so that we can do something with its return value in upcoming steps.
 - Below our `movies` declaration, call `getRandomMovie()`, passing `movies` as the argument. Store the returned value in a variable called `randomMovie`
 - Below our `randomMovie` declaration, call `getMovieInfo()`, passing `randomMovie` as the argument. Await its return and save it to a variable called `info`.
 - Finally, as the last line of the `showRandomMovie()` function, call `displayMovie()`, passing `info` as the argument.
 
-  ### Run your program to see movie suggestions. Like or dislike each movie to be shown another random suggestion. Change genres to get different suggestions based on your interests
+  ### Run your program to see movie suggestions. Like or dislike each movie to be shown another random suggestion. Change genres to get different suggestions based on your interests
